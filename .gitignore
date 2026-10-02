@@ -1,0 +1,9 @@
+*.tmp
+*.log
+
+build/
+dist/
+
+.env
+venv/
+__pycache__/
