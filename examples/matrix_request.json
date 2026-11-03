@@ -1,0 +1,9 @@
+{
+  "version": "1.0",
+  "request_id": "matrix-001",
+  "dimension": "2",
+  "values": [
+    ["1", "2"],
+    ["2", "3"]
+  ]
+}
