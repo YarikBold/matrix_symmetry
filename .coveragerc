@@ -1,0 +1,8 @@
+[run]
+source = src
+parallel = True
+relative_files = True
+patch = subprocess
+
+[report]
+show_missing = True

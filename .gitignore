@@ -7,3 +7,9 @@ dist/
 .env
 venv/
 __pycache__/
+
+# Результаты измерения покрытия
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
