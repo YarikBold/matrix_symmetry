@@ -1,6 +1,7 @@
 """Управление модулями и обработка ошибок интеграции."""
 
 import argparse
+from pathlib import Path
 import sys
 
 if __package__:
@@ -39,6 +40,9 @@ def main(checker=is_symmetric):
 
 def run_json(input_path, output_path, checker=None, timeout=5.0):
     try:
+        output_file = Path(output_path)
+        if output_file.exists() and output_file.samefile(input_path):
+            raise ValueError("Файлы запроса и ответа должны различаться.")
         payload = load_request(input_path)
         data = map_request(payload)
         if checker is None:
